@@ -8,8 +8,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: #7a20a1;
-  border-style: solid;
+  margin-top: 10px;
+  padding-top: 20px;
 }
 
 .header{
@@ -17,12 +17,11 @@ flex-direction: column;
   font-size:  4px;
   display: flex;
 text-align: center;
-border-style: solid;
+
 
 }
 .imgOne{
 display: flex;
-border-style: solid;
 justify-content: center;
 
 
@@ -222,6 +221,12 @@ h3
   font-size: 14px;
   margin-bottom: 5px; 
   color: #585858;
+
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 4px;
+    color:#000;
 }
 
 .f_paragraph
@@ -232,14 +237,32 @@ h3
     color: #696969;
 }
 
+.firstLetter{
+    font-size: 30px;
+    color:#000;
+    
+}
 
+.lighterFont{
+    font-weight: lighter;
+    color:#000;
+}
 
+.contacts{
+    display: flex;
+    flex-direction: row;
+}
 
+.imgContact{
+    display: flex;
+    flex-direction: row;
+    background-color: #6dbd9a;
+}
 
-
-
-
-
-
+.contents{
+    display: flex;
+    background-color: #000;
+    color:#fff;
+}
 
 

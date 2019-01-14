@@ -1,0 +1,245 @@
+*{
+  font-family: verdana,sans-serif;
+
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: #7a20a1;
+  border-style: solid;
+}
+
+.header{
+flex-direction: column;
+  font-size:  4px;
+  display: flex;
+text-align: center;
+border-style: solid;
+
+}
+.imgOne{
+display: flex;
+border-style: solid;
+justify-content: center;
+
+
+}
+
+
+
+.head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.social_media
+{
+   display: flex;  
+   align-items: center;  
+   justify-content: space-between;
+    
+}
+
+.first_page
+{
+    margin:0% 10% 5% 10% ;
+}
+
+
+#facebook 
+{
+    flex: 1;
+    margin-right: 25px;
+}
+
+#menu
+{
+    flex: 3;
+    margin-right: 0px;
+    
+}
+
+#twitter
+{ 
+    flex: 1;
+     margin-right: 25px;
+}
+#instagram
+{
+     flex: 1;
+     margin-right: 35px;
+}
+
+
+
+
+@media (min-width:900px)
+{
+    .banner
+{
+    display: flex;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+  
+}
+
+
+#b_header
+{
+    margin-top: 25%;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+}
+
+.b_explaination
+{
+    flex: 1;
+}
+#b_paragraph
+{
+   color: #696969;
+   font-size: 1em;   
+   letter-spacing: 0.1em;    
+}
+
+#image1
+{
+    flex: 1;
+    margin-right: 30px;
+}
+
+
+.btn  {
+  border: none;
+  background-color: #6dbd9a;
+  border-radius: 0.8em;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.2em 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin-top: 3%; 
+  letter-spacing: 0.1em;
+}
+
+
+
+
+
+
+/*second page*/
+
+
+.second_page
+{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+h1, h3
+{
+    text-transform: uppercase;
+}
+h1
+{
+    margin-bottom: 1px;
+}
+
+.h_paragraph
+{
+    margin-top: 1px;
+    color: #696969;
+}
+.features_header
+{
+    text-align: center;
+    /*margin: 0% 5% 0% 5%;*/
+}
+
+#f_head_1
+{
+    font-weight: lighter;
+}
+
+
+
+@media (min-width:900px)
+{
+  .features_view
+  {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+.f_options_1
+{
+    flex: 1;
+    text-align: center;
+
+}
+
+.f_image
+{
+    flex: 2;
+    text-align: center
+}
+
+.f_options_2
+{
+    flex: 1;
+    text-align: center;
+}
+
+.feature
+{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;  
+
+}
+
+h3
+{
+  font-size: 14px;
+  margin-bottom: 5px; 
+  color: #585858;
+}
+
+.f_paragraph
+{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    color: #696969;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link rel="stylesheet" ype="text/css"  href="css/index.css">
 <title>FinLink</title>
 </head>
 <body>
 
-      
+<div id="fullpage">  
+
 <!-- first page -->
+<div class="section active">
 
-
-   
 <div class="first_page">     
     <!-- Start of header-->
   <header class="head" id="h1">
@@ -38,11 +39,17 @@
       <img height="500px" width="400px" id="image1" src="images/app.png" > 
    </div>     
 </div>   
+
+</div>
     
 <!-------end of first page---->
     
     
     <!--second page-->
+
+
+<div class="section">
+
 <div class="second_page">   
  <div class="features_header">
     <h1><span id="f_head_1"><span style="font-size: 40px">f</span>inlink</span> <span style="font-size: 40px">f</span>eatures</h1>
@@ -89,10 +96,12 @@
   </div>
  </div>
 </div>     
-      
+</div>     
                            
       <!--end of second page-->
+
 <!--START THIRD PAGE-->
+<div class="section">
 <div class="container">
 <div class="header">
     <h2><span class="lighterFont"><span style="font-size:40px;">D</span>ESIGNED</span> <span class ="firstLetter">F</span>OR <span class ="firstLetter">A</span>LL <span class="lighterFont"><span style="font-size:40px">S</span>YSTEMS</span></h2>
@@ -103,9 +112,10 @@
    <img src="images/mm2.png" alt="image one">
  </div>
   </div>
+</div>
 
-<!-- Contact-->
-
+<!--footer and Contact-->
+<div class="section">
 <div class="contacts">
           <div class="imgContact">
                <div class="PhoneImg">
@@ -129,43 +139,61 @@
                <input type="button"  class="btn" value="SEND MY MESSAGE">
          </div>
 </div>
+
+
  
 <!--Footer-->
 <div class="footer">
-    <div class="fisrtCol">
-        <h3>the basis</h3>
-        <p>BASIS CONTAINS COMPONENTS AND COMPLEX <br> BLOCKS WHICH EASILY BE INTEGRATED INTO<br> ALMOST ANY DESIGN.</p>
-        <p>@2016 THE BASIC FRAMEWORK</p>
+        <div class="fisrtCol">
+            <h3>the basis</h3>
+            <p>BASIS CONTAINS COMPONENTS AND COMPLEX <br> BLOCKS WHICH EASILY BE INTEGRATED INTO<br> ALMOST ANY DESIGN.</p>
+            <p>@2016 THE BASIC FRAMEWORK</p>
+        </div>
+        <div class="secondCol">
+            <h3>ABOUT US</h3>
+            <h3>SERVICES</h3>
+            <h3>PORTFOLIO</h3>
+            <h3>CONTACT US</h3>
+            
+        </div>
+        <div class="thirdCol">
+            <h3>FOLLOW US</h3>
+            <nav class="social_media" style="background:silver;">
+       <img height="20px" width="20px" id="facebook"src="images/facebook.svg">
+       <img height="20px" width="20px" id="twitter"src="images/twitter.svg">
+       <img height="20px" width="20px" id="instagram" src="images/instagram.svg">
+       
+       </nav> 
+        </div>
+        <div class="fourthCol">
+            <h3>CONTACT US</h3>
+            <p>THE CASTLE UNIT 345 2500 CASTLE<br>MANHATTAN, NEW YORK CITY<br>T:+216(0)4036294753<br>E:HELLO@THEMENECTAR.COM</p>
+        </div>
     </div>
-    <div class="secondCol">
-        <h3>ABOUT US</h3>
-        <h3>SERVICES</h3>
-        <h3>PORTFOLIO</h3>
-        <h3>CONTACT US</h3>
-        
-    </div>
-    <div class="thirdCol">
-        <h3>FOLLOW US</h3>
-        <nav class="social_media" style="background:silver;">
-   <img height="20px" width="20px" id="facebook"src="images/facebook.svg">
-   <img height="20px" width="20px" id="twitter"src="images/twitter.svg">
-   <img height="20px" width="20px" id="instagram" src="images/instagram.svg">
-   
-   </nav> 
-    </div>
-    <div class="fourthCol">
-        <h3>CONTACT US</h3>
-        <p>THE CASTLE UNIT 345 2500 CASTLE<br>MANHATTAN, NEW YORK CITY<br>T:+216(0)4036294753<br>E:HELLO@THEMENECTAR.COM</p>
-    </div>
-</div>
-<!--scroll page-->
-<div id="fullpage">
-    <div class="section">Section 1</div>
-    <div class="section">
-        <div class="slide">Slide 2.1</div>
-        <div class="slide">Slide 2.2</div>
-        <div class="slide">Slide 2.3</div>
-    </div>
-    <div class="section">Section 3</div>
 </div>
 
+</div>
+<!-- java script files-->
+
+
+<script type="text/javascript" src=js/fullpage.js></script>
+
+<script type="text/javascript">
+     new fullpage('#fullpage', {
+	//options here
+    autoScrolling:true,
+    navigation:true,
+    navigationPosition:'left',
+    //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+
+	scrollHorizontally: true
+});
+
+//methods
+fullpage_api.setAllowScrolling(true);
+fullpage_api.setAutoScrolling(true);
+</script>
+
+</body>
+</html>
+ 

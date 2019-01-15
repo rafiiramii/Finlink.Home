@@ -4,39 +4,6 @@
 }
 
 
-.container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 10px;
-  padding-top: 20px;
-}
-
-.header{
-flex-direction: column;
-  font-size:  4px;
-  display: flex;
-text-align: center;
-
-
-}
-.imgOne{
-display: flex;
-justify-content: center;
-
-
-}
-
-
-
-.head
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 9%;
-    margin-right: 9%;
-}
 
 .social_media
 {
@@ -237,7 +204,44 @@ h2{
     color: #696969;
 }
 
-/*contacts page*/
+/*third page */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  
+  .header{
+  flex-direction: column;
+    font-size:  4px;
+    display: flex;
+  text-align: center;
+  
+  
+  }
+  .imgOne{
+  display: flex;
+  justify-content: center;
+  
+  
+  }
+  
+  
+  
+  .head
+  {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 9%;
+      margin-right: 9%;
+  }
+
+  /*end third page */
+
+/* start contacts page*/
 .firstLetter{
     font-size: 30px;
     color:#000;
@@ -251,7 +255,7 @@ h2{
 
 .contacts{
     border-top-style: dashed;
-    padding-top: 40px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
 
@@ -266,20 +270,26 @@ h2{
 .imgContact{
     
     display: flex;
-    flex:1;
+    
     flex-direction: row;
     background-color: #6dbd9a;
-    flex-flow: wrap;
-
+    flex-wrap: nowrap;
+       align-content: center;
     
     
 }
 
+.PhoneImg{
+    border: #000;
+
+    margin-left: 40px;
+}
 .text{
-    flex: 1;
+    
     flex-direction: column;
   display: flex;
-  
+  margin-left: 0%;
+  margin-right: 150px;
    justify-content: center;
   
 }
@@ -306,9 +316,11 @@ h2{
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  margin-top: 1%; 
+  margin-top: 0.1%; 
   letter-spacing: 0.1em;
-  
+  width: 155px;
+  height: 39px;
+
 }
 
 .input{
@@ -325,5 +337,10 @@ h2{
     margin-top: 3%; 
     letter-spacing: 0.1em;
 }
+
+/*end contact page*/
+
+/*start footer page */
+
 
 

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link rel="stylesheet" ype="text/css"  href="css/index.css">
 <title>FinLink</title>
 </head>
 <body>
 
-      
+<div id="fullpage">  
+
 <!-- first page -->
+<div class="section active">
 
-
-   
 <div class="first_page">     
     <!-- Start of header-->
   <header class="head" id="h1">
@@ -38,11 +39,17 @@
       <img height="500px" width="400px" id="image1" src="images/app.png" > 
    </div>     
 </div>   
+
+</div>
     
 <!-------end of first page---->
     
     
     <!--second page-->
+
+
+<div class="section">
+
 <div class="second_page">   
  <div class="features_header">
     <h1><span id="f_head_1"><span style="font-size: 40px">f</span>inlink</span> <span style="font-size: 40px">f</span>eatures</h1>
@@ -89,10 +96,12 @@
   </div>
  </div>
 </div>     
-      
+</div>     
                            
       <!--end of second page-->
+
 <!--START THIRD PAGE-->
+<div class="section">
 <div class="container">
 <div class="header">
     <h2><span class="lighterFont"><span style="font-size:40px;">D</span>ESIGNED</span> <span class ="firstLetter">F</span>OR <span class ="firstLetter">A</span>LL <span class="lighterFont"><span style="font-size:40px">S</span>YSTEMS</span></h2>
@@ -103,9 +112,9 @@
    <img src="images/mm2.png" alt="image one">
  </div>
   </div>
-
+</div>
 <!--footer and Contact-->
-
+<div class="section">
 <div class="contacts">
           <div class="imgContact">
                <div class="imgz">
@@ -120,4 +129,30 @@
                 <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh<br>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
          </div>
 </div>
+</div>
+
+</div>
+<!-- java script files-->
+
+
+<script type="text/javascript" src=js/fullpage.js></script>
+
+<script type="text/javascript">
+     new fullpage('#fullpage', {
+	//options here
+    //autoScrolling:true,
+    navigation:true,
+    navigationPosition:'right',
+    //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+
+	//scrollHorizontally: true
+});
+
+//methods
+f//ullpage_api.setAllowScrolling(true);
+//fullpage_api.setAutoScrolling(true);
+</script>
+
+</body>
+</html>
  

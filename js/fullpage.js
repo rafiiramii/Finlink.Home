@@ -514,7 +514,7 @@
                 if(!isResponsive){
                     setAutoScrolling(false, 'internal');
                     setFitToSection(false, 'internal');
-                    hide($(SECTION_NAV_SEL));
+                    hide($(S ECTION_NAV_SEL));
                     addClass($body, RESPONSIVE);
                     if(isFunction( options.afterResponsive )){
                         options.afterResponsive.call( container, active);

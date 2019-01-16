@@ -29,12 +29,19 @@ header{
 
 #section1
 {
-  /*  background-image: url ('../images/background.png');
+      background-image:url(../images/background.png);
+   /* 
     background-color: #000; 
     background-position: center;
     background-size: 50% 50%;
 
     */
+    /* justify-self: flex-end; */
+    /* height: 70vh; */
+    /* width: 100vw; */
+    background-size: 100% ;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 

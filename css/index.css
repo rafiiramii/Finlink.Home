@@ -279,7 +279,6 @@ h2{
 
   .imgOne{
       /* flex:1; */
-      justify-self: flex-end;
       height: 70vh;
       width: 100vw;
       background-image: url(../images/mm2.png);
@@ -513,9 +512,9 @@ h2{
     }
 
 
-    #contactUsSection{
-        display: none;
-    }
+    /* #contactUsSection{
+        display: none; */
+    
     .text{
         display: block;
         margin: 0% 50% 5% 10%;
@@ -544,5 +543,15 @@ h2{
     }
     h2{
         font-weight: 200px;
+    }
+    .imgOne{
+        /* flex:1; */
+        height: 40vh;
+        width: 100vw;
+        background-image: url(../images/mm2.png);
+        background-size: 90%;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin-bottom: 0%;
     }
 }

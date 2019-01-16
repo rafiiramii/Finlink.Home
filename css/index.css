@@ -468,10 +468,8 @@ h2{
         padding-top: 1em;
         margin-bottom: 0.1em;
     }
-    #logo
-    {
-        /* margin-left: 0.1em; */
-    }
+    
+
     .banner{
         
         text-align: center;
@@ -483,14 +481,14 @@ h2{
         text-align: center;
     }
 
-
-    .b_explaination
-    {
-        padding-top: 0px;
+    #b_paragraph{
+        font-size: 1.2em;
     }
+
+
     #b_header {
-        margin-top: 2.3em;
-        margin-bottom: 1em;
+        /* margin-top: 2.3em; */
+         margin-bottom: 1em;
         font-size: 1.6em;
     }
 
@@ -500,8 +498,9 @@ h2{
     }
     #b_paragraph + button{
         margin: auto;
-        margin-top: 2em;
+        margin-bottom: 2em;
         display: block;
+        /* font-size: 2em; */
     }
     
     .f_paragraph{

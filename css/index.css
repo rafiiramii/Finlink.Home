@@ -16,6 +16,8 @@
 .first_page
 {
     margin:0% 10% 5% 10% ;
+    /*background-color: #000; */
+    background-image: url ("../images/background.png");
 }
 
 
@@ -357,8 +359,11 @@ align-content: stretch;
 padding-top: 40px;
 }
 
+/* please change name of id it affect the icon in the header
+
 #twitter{
-    fill:white;
+    
 }
+*/
 /*end footer page */
 

@@ -239,8 +239,8 @@ h2{
   display: flex;
   align-content: center;
   width:1000px;
-   height: 900px;
-   flex: 1;
+   height: 500px;
+   
     position: relative;
   }
   
@@ -371,6 +371,10 @@ align-content: stretch;
 padding-top: 40px;
 }
 
+h5{
+    font-weight: 100;
+    color: rgb(199, 197, 197);
+}
 .icon{
     fill:white;
     

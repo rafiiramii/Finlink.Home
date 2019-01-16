@@ -473,7 +473,7 @@ h6{
         /* margin-left: 0.1em; */
     }
     .banner{
-        margin-top: 0.1;
+        
         text-align: center;
         margin-left: 3em; 
     }
@@ -483,6 +483,11 @@ h6{
         text-align: center;
     }
 
+
+    .b_explaination
+    {
+        padding-top: 0px;
+    }
     #b_header {
         margin-top: 2.3em;
         margin-bottom: 1em;

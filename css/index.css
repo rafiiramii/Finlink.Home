@@ -3,6 +3,14 @@
 
 }
 
+.head
+  {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 9%;
+      margin-right: 9%;
+  }
 
 
 .social_media
@@ -99,6 +107,10 @@
   font-family: sans-serif;
   margin-top: 3%; 
   letter-spacing: 0.1em;
+  padding-top: 0.95em;
+    padding-bottom: 0.95em;
+    margin-top: 0.7em;
+    min-width: 200px;
 }
 
 
@@ -216,37 +228,33 @@ h2{
   }
   
   .header{
+      flex: 1;
   flex-direction: column;
-    font-size:  4px;
+    font-size:  15px;
     display: flex;
   text-align: center;
+    
   
   
   }
   .imgOne{
   display: flex;
-  justify-content: center;
-  
-  
+  align-content: center;
+  width:1000px;
+   height: 900px;
+   flex: 1;
+    position: relative;
   }
   
   
   
-  .head
-  {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 9%;
-      margin-right: 9%;
-  }
-
+  
   /*end third page */
 
 /* start contacts page*/
 .firstLetter{
     font-size: 30px;
-    color:#000;
+    color:rgba(0, 0, 0, 0.89);
     
 }
 
@@ -255,14 +263,16 @@ h2{
     color:#000;
 }
 
+.p1{
+    justify-content: center;
+}
 .contacts{
-    border-top-style: dashed;
+    border-top-style:  dashed;
     border-bottom-style: solid;
     border-bottom-color: aquamarine;
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-
     padding-top: 0%;
     align-items: stretch;
     flex-direction: row;
@@ -276,7 +286,7 @@ h2{
     display: flex;
     
     flex-direction: row;
-    background-color: rgba(65, 218, 167, 0.897);
+    background-color:  #A3E4D7  ;
     flex-wrap: nowrap;
        align-content: center;
     
@@ -301,11 +311,13 @@ h2{
 .contents{
     width: 50%;
     display: flex;
-    flex: 1;
     background-color: #000;
     color:#fff;
+    align-items: center;
     flex-direction: column;
-    align-items: center
+    padding-bottom: 30px;
+    padding-bottom: 40px;
+    
    
 }
 .btnTry{
@@ -314,9 +326,9 @@ h2{
   border-radius: 0.8em;
   color: white;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1;
-  padding: 1.2em 1.2em;
+  padding: 1.2em 1.2em ;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -324,10 +336,12 @@ h2{
   letter-spacing: 0.1em;
   width: 155px;
   height: 39px;
+  display: inline-block;
 
 }
 
 .input{
+    margin-top: 0.7em;
     background: none;
     border-radius: 0.8em;
     color: white;
@@ -338,8 +352,8 @@ h2{
     text-align:start;
     text-transform: uppercase;
     font-family: sans-serif;
-    margin-top: 3%; 
     letter-spacing: 0.1em;
+    width: 300px;
 }
 
 /*end contact page*/
@@ -359,11 +373,9 @@ align-content: stretch;
 padding-top: 40px;
 }
 
-/* please change name of id it affect the icon in the header
-
-#twitter{
+.icon{
+    fill:white;
     
 }
-*/
-/*end footer page */
+
 

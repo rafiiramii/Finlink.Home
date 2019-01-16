@@ -24,8 +24,17 @@
 .first_page
 {
     margin:0% 10% 5% 10% ;
-    /*background-color: #000; */
-    background-image: url ("../images/background.png");
+    
+}
+
+#section1
+{
+  /*  background-image: url ('../images/background.png');
+    background-color: #000; 
+    background-position: center;
+    background-size: 50% 50%;
+
+    */
 }
 
 
@@ -86,10 +95,13 @@
    letter-spacing: 0.1em;    
 }
 
-#image1
+.image1
 {
     flex: 1;
-    margin-right: 30px;
+    display: flex;
+    padding-left: 3em;
+    padding-top: 2em;
+    
 }
 
 

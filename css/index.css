@@ -3,14 +3,14 @@
 
 }
 
-.head
-  {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 9%;
-      margin-right: 9%;
-  }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 9%;
+    /* margin-left: 9%;
+    margin-right: 9%; */
+}
 
 
 .social_media
@@ -434,17 +434,54 @@ h6{
     
 }
 
-/*mobile view "third page"*/
-@media all and (min-width: 300px) {
-    .imgOne{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-top: 3px; 
-        border: none;
-        padding-top: 0%;
-        flex-shrink: initial;
-        }
 
+/* DESKTOP ONLY STYLES */
+@media all and (min-width: 668px) {   
+    .for-mob{
+        display: none;
+    }
 }
 
+/* MOBILE STYLES */
+@media all and (max-width: 668px) {
+    html, body{
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .for-lg{
+        display: none;
+    }
+
+    #section1{
+        padding-bottom: 4em;
+    }
+
+    header{
+        justify-content: center;
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    #b_header,
+    #b_paragraph {
+        text-align: center;
+    }
+
+    #b_header {
+        margin-top: 2.3em;
+        margin-bottom: 1em;
+        font-size: 1.6em;
+    }
+
+    #b_paragraph + button{
+        margin: auto;
+        margin-top: 2em;
+        display: block;
+    }
+
+
+    #contactUsSection{
+        display: none;
+    }
+}

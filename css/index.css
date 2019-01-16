@@ -237,6 +237,7 @@ h2{
     flex-direction: column;
     margin-top: 10px;
     padding-top: 20px;
+    border: none;
   }
   
   .header{
@@ -246,18 +247,24 @@ h2{
     display: flex;
   text-align: center;
     
-  
+  margin-bottom: 20px;
   
   }
   .imgOne{
   display: flex;
-  align-content: center;
-  width:1000px;
-   height: 500px;
-   
-    position: relative;
+   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3px; 
+  border: none;
+  padding-top: 0%;
   }
-  
+  #imgBg{
+    width:1900px; 
+    height: 500px; 
+    margin-top: 3px;
+    padding-top: 0%;
+
+  }
   
   
   
@@ -282,7 +289,7 @@ h2{
     border-top-style:  dashed;
     border-bottom-style: solid;
     border-bottom-color: aquamarine;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 0%;
@@ -296,7 +303,7 @@ h2{
 .imgContact{
     
     display: flex;
-    
+    flex:1;
     flex-direction: row;
     background-color:  #A3E4D7  ;
     flex-wrap: nowrap;
@@ -321,6 +328,7 @@ h2{
 }
 
 .contents{
+    flex:1;
     width: 50%;
     display: flex;
     background-color: #000;
@@ -334,21 +342,22 @@ h2{
 }
 .btnTry{
     border: none;
-  background-color: #000;
+  background-color:  black;
   border-radius: 0.8em;
   color: white;
   font-size: 0.9rem;
-  font-weight: 400px;
-  line-height: 1;
-  padding: 1.2em 1.2em ;
+  font-weight: 400;
+  
+  padding: 0.2em 1.2em;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
-  margin-top: 0.1%; 
+  
   letter-spacing: 0.1em;
-  width: 155px;
-  height: 39px;
-  display: inline-block;
+  padding-top: 0.95em;
+    padding-bottom: 0.95em;
+    margin-top: 2px;
+    width: 150px;
 
 }
 
@@ -382,12 +391,15 @@ justify-content: space-around;
 width: 100%;
 flex: 1 100%;
 align-content: stretch;
-padding-top: 40px;
+padding-top: 5px;
+border-bottom-style: dashed;
+margin-bottom: 0%;
 }
 
 h5{
     font-weight: 100;
     color: rgb(199, 197, 197);
+    font-size: 11px;
 }
 .icon{
     fill:white;

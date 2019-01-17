@@ -116,16 +116,16 @@
 
 <!--START THIRD PAGE-->
 <div class="section">
-         <div class="container" id="designedForAllContainer">
-              <div class="header">
-                <h1><span class="lighterFont"><span style="font-size:40px;">D</span>ESIGNED</span> <span class ="firstLetter">F</span>OR <span class ="firstLetter">A</span>LL <span class="lighterFont"><span style="font-size:40px">S</span>YSTEMS</span></h1>
-                <p class="h_paragraph">The basic is a fully responsive case study portfolio system based on<br> wordpress. Built by a designers for designers</p>
+<div class="container" id="designedForAllContainer">
+<div class="header">
+    <h1><span class="lighterFont"><span style="font-size:40px;">D</span>ESIGNED</span> <span class ="firstLetter">F</span>OR <span class ="firstLetter">A</span>LL <span class="lighterFont"><span style="font-size:40px">S</span>YSTEMS</span></h1>
+    <p class="h_paragraph">The basic is a fully responsive case study portfolio system based on<br> wordpress. Built by a designers for designers</p>
 
-              </div>
-           <div class="imgOne">
+    </div>
+ <div class="imgOne">
    <!-- <img  id="imgBg" src="images/mm2.png"  alt="image one"> -->
-         </div>
-     </div>
+ </div>
+  </div>
 </div>
 
 <!-- and Contact-->
@@ -196,7 +196,7 @@
 <script type="text/javascript" src="js/fullpage.js"></script>
 
 <script type="text/javascript">
-    function setTabScrolling(){
+    
         if(window.screen.width> 900){
             new fullpage('#fullpage', {
                 autoScrolling:true,
@@ -208,14 +208,15 @@
             
             fullpage_api.setAllowScrolling(true);
         }
-    }
+    
 
-    window.onresize = function(){
-        console.log("Window resized!");
-        setTabScrolling();
-    }
+    // window.onresize = function(){
+    //     console.log("Window resized!");
+    //     setTabScrolling();
+    //     $.fn.fullpage.destroy('all');
+    // }
 
-    setTabScrolling()
+    // setTabScrolling()
 </script>
 
 </body>

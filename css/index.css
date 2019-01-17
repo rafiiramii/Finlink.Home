@@ -456,7 +456,7 @@ h2{
 
 
 
-    header{
+    .header{
         justify-content: center;
         margin: 0;
         padding: 1em 0;
@@ -493,7 +493,12 @@ h2{
 
     .h_paragraph
     {
-        font-size: 1.2em;
+        margin-left: 40px;
+        margin-right: 40px;
+    color: #696969;
+    letter-spacing: 0.02em;
+        font-size: 1.1em;
+        margin-top: 20px;
     }
     #b_paragraph + button{
         margin: auto;
@@ -552,6 +557,24 @@ h2{
         background-size: 90%;
         background-position: top;
         background-repeat: no-repeat;
-        margin-bottom: 0%;
+        margin-bottom: -45%;
+        margin-top: -5%;
     }
+    .header{
+        margin: auto;
+        margin-bottom: 2em;
+        display: block;
+        text-align: center;
+    }
+
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        padding-top: 20px;
+        border: none;
+      }
+    
 }

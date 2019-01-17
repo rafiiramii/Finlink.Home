@@ -196,17 +196,26 @@
 <script type="text/javascript" src="js/fullpage.js"></script>
 
 <script type="text/javascript">
-    if(window.innerWidth > 668){
-        new fullpage('#fullpage', {
-           autoScrolling:true,
-           navigation:true,
-           navigationPosition:'right',
-           //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-           scrollHorizontally: true
-       });
-       
-       fullpage_api.setAllowScrolling(true);
+    function setTabScrolling(){
+        if(window.screen.width> 900){
+            new fullpage('#fullpage', {
+                autoScrolling:true,
+                navigation:true,
+                navigationPosition:'right',
+                //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                scrollHorizontally: true
+            });
+            
+            fullpage_api.setAllowScrolling(true);
+        }
     }
+
+    window.onresize = function(){
+        console.log("Window resized!");
+        setTabScrolling();
+    }
+
+    setTabScrolling()
 </script>
 
 </body>

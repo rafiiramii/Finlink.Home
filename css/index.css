@@ -307,7 +307,7 @@ h2{
     justify-content: center;
 }
 .contacts{
-    border-top-style:  dashed;
+    border-top-style:  none;
     border-bottom-style: solid;
     border-bottom-color: aquamarine;
     margin-top: 40px;
@@ -379,6 +379,7 @@ h2{
 
 }
 
+
 .input{
     margin-top: 0.7em;
     background: none;
@@ -393,6 +394,8 @@ h2{
     font-family: sans-serif;
     letter-spacing: 0.1em;
     width: 300px;
+    display: flex;
+    align-content: center;
 }
 
 /*end contact page*/
@@ -441,6 +444,10 @@ h2{
     .for-mob{
         display: none;
     }
+    .accordion{
+        visibility: hidden;
+        display: none;
+    }
 }
 
 /* MOBILE STYLES */
@@ -468,7 +475,10 @@ h2{
         margin-bottom: 0.1em;
     }
     
-
+     .logo{
+         display: flex;
+         align-content: center;
+     }
     .banner{
         
         text-align: center;
@@ -576,5 +586,70 @@ h2{
         padding-top: 20px;
         border: none;
       }
+      .contacts{
+          border: none;
+      }
+
+      .accordions{
+               border: #000;
+               border-radius: 20px;
+               background-color: #585858;
+      }
+      .accordion:not(:last-child){
+        border-bottom: none;
+    }
     
+    .accordion input{
+        display: none;
+    }
+
+    .accordion label{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5em;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .accordion:first-of-type label{
+        border-top: 1px solid #ddd;
+    }
+
+    .accordion input:checked + label{
+        border-bottom: none;
+    }
+
+    .accordion input:checked + label svg{
+        fill: black;
+        stroke: transparent;
+        transform: rotate(-180deg);
+    }
+
+    .accordion div{
+        padding: 1.5em;
+        background: #f0f0f0;
+        overflow: hidden;
+        transition: all 0.15s ease-out;
+    }
+
+    .accordion input:not(:checked) ~ div{
+        padding: 0 2em;
+        height: 0;
+    }
+    /* hide  finlink features of  desktop style in the mobile view */
+    .features_view{
+        visibility: hidden;
+        clear: both;
+        display: none;
+    }
+    
+    /* hide designed section in mobile view */
+    .container{
+        visibility: hidden;
+        display: none;
+    }
+    /* Hide the Finlink Features paragraph in the mobile */
+    .h_paragraph{
+        visibility: hidden;
+        display: none;
+    }
 }

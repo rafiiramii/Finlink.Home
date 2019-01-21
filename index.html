@@ -4,6 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <link rel="stylesheet" ype="text/css"  href="css/index.css"> 
+  
+
+  <!-- jquery plugins for form validatio -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
   <title>FinLink</title>
 </head>
 
@@ -108,6 +114,74 @@
        </div>
   </div>
  </div>
+
+ <!-- Accordion start for mobile view only -->
+ <div class="accordios" style="background-color: rgba(128, 128, 128, 0.349); margin-top: 2.5em;" >
+       <div class="accordion">
+           <input id="feature1" type="checkbox" name="accordion">
+              <label for="feature1">
+                   best choice
+
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design.
+    </div>
+</div>
+<div class="accordion">
+    <input id="feature2" type="checkbox" name="accordion">
+    <label for="feature2">
+        Good Structure
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+    </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design
+    </div>
+</div>
+<div class="accordion">
+    <input id="feature3" type="checkbox" name="accordion">
+    <label for="feature3">
+        Nice Graphics
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+    </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design
+    </div>
+</div>
+
+<div class="accordion">
+    <input id="feature4" type="checkbox" name="accordion">
+    <label for="feature4">
+        Perfect For Web
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+    </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design
+    </div>
+</div>
+
+<div class="accordion">
+    <input id="feature5" type="checkbox" name="accordion">
+    <label for="feature5">
+        Best Price
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+    </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design
+    </div>
+</div>
+<div class="accordion">
+    <input id="feature6" type="checkbox" name="accordion">
+    <label for="feature6">
+        Time Saving
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+    </label>
+    <div>
+        Basics contains components and complex blocks which can easily intergrated into almost and design
+    </div>
+</div>
+</div>
 </div>     
 </div>     
                            
@@ -146,13 +220,16 @@
               
                 <p   style="  margin-top: 0.7em; font-size: 10px; color:rgba(192, 192, 192, 0.897);  text-align: center;">SIMPLICE IS THE RESPONSIVE STUDY PORTIFOLIO SYSTEM BASED ON<br> <br>  WORDDPRES.BUILT BY DESIGNERS, FOR DESIGNERS</p>
 
-                <input placeholder="YOUR NAME"  class="input" type="text">
+     <!-- Message Form -->
+        <form id="messageForm">
+                <input placeholder="YOUR NAME"  class="input" type="text" name="name">
                     <br>
-               <input placeholder="YOUR EMAIL" class="input" type="text">
+               <input placeholder="YOUR EMAIL" class="input" type="email" name="email">
                <br>
-               <textarea  placeholder="YOUR MESSAGE" name=""  class="input" cols="30" rows="7"></textarea>
-               <input type="button" style="width:350px; background-color: rgba(207, 252, 231, 0.753)  " class="btn" value="SEND MY MESSAGE">
-         </div>
+               <textarea  placeholder="YOUR MESSAGE" name="message"  class="input" cols="30" rows="7"></textarea>
+               <input type="submit" style="width:350px; background-color: rgba(207, 252, 231, 0.753)  " class="btn" name="send my message" value="SEND MY MESSAGE">
+        </form>
+            </div>
 </div>
 <!-- End Third Page -->
 
@@ -160,6 +237,7 @@
 <!--Footer-->
  <div class="footer">
     <!-- change firstCol to basics -->
+    
         <div class="basics">
             <h4  style="font-weight: 300px;">the basics</h4>
             <h5>BASICS CONTAINS COMPONENTS AND COMPLEX <br><br> BLOCKS WHICH EASILY BE INTEGRATED INTO<br><br> ALMOST ANY DESIGN.</h5>
@@ -198,7 +276,7 @@
 
     
 <!-- Start scipt tags-->
-
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/fullpage.js"></script>
 
 <script type="text/javascript">

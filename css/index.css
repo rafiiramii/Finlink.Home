@@ -457,6 +457,14 @@ h2{
         padding: 0;
         margin: 0;
     }
+    .first_page{
+        padding-bottom: 4em;
+
+    }
+
+    .btn{
+        margin-top: 3em;
+    }
     .for-lg, #bannerImage{
         display: none;
     }
@@ -475,9 +483,11 @@ h2{
         margin-bottom: 0.1em;
     }
     
-     .logo{
+     #logo{
          display: flex;
          align-content: center;
+         margin-left: 30px;
+         margin-top: -30px;
      }
     .banner{
         
@@ -491,12 +501,18 @@ h2{
     }
 
     #b_paragraph{
-        font-size: 1.2em;
+        font-size: 1em;
+        display: block;
+        margin-block-start: -1em;
+        margin-block-end: 1em;
+        margin-inline-start: -50px;
+        margin-inline-end: -30px;
+        margin-bottom: 1.9em;
     }
 
 
     #b_header {
-        /* margin-top: 2.3em; */
+        margin-top: 2em;
          margin-bottom: 1em;
         font-size: 1.6em;
     }
@@ -505,7 +521,7 @@ h2{
     {
         margin-left: 40px;
         margin-right: 40px;
-    color: #696969;
+    color: #000000ad;
     letter-spacing: 0.02em;
         font-size: 1.1em;
         margin-top: 20px;
@@ -525,6 +541,10 @@ h2{
     h3{
         font-size: 1.4em;
     }
+    .second_page{
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
 
 
     /* #contactUsSection{
@@ -532,9 +552,11 @@ h2{
     
     .text{
         display: block;
-        margin: 0% 50% 5% 10%;
+        margin: 0% 50% 5% 0.5%;
          justify-content: center;
-         padding: 0% 10%;
+         padding: 2em 0.01em 1em 0.01em;
+         width: 800px;
+         
     }
     .contents{
         flex:1;
@@ -544,7 +566,8 @@ h2{
         color:#fff;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 30px;
+        padding-bottom: 3em;
+        padding-top: 2em;
     }
     .footer{
         flex-direction: column;
@@ -594,6 +617,7 @@ h2{
                border: #000;
                border-radius: 20px;
                background-color: #585858;
+               margin-left: 20px;
       }
       .accordion:not(:last-child){
         border-bottom: none;
@@ -626,7 +650,7 @@ h2{
 
     .accordion div{
         padding: 1.5em;
-        background: #f0f0f0;
+        background-color:rgb(243, 243, 243);
         overflow: hidden;
         transition: all 0.15s ease-out;
     }
@@ -652,4 +676,8 @@ h2{
         visibility: hidden;
         display: none;
     }
+    /* .imgContact{
+        visibility: hidden;
+        display: none;
+    } */
 }

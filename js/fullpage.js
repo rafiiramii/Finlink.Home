@@ -313,7 +313,7 @@
 
         /**
         * Sets lockAnchors
-        */
+        */;
         function setLockAnchors(value){
             options.lockAnchors = value;
         }
